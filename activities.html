@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>活動報告 - 青空少年野球クラブ</title>
+    <meta name="description" content="青空少年野球クラブの試合結果、練習の様子、イベント報告をお伝えします。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-baseball-ball"></i>
+                    <span>青空少年野球クラブ</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">クラブ概要</a></li>
+                    <li><a href="members.html">メンバー紹介</a></li>
+                    <li><a href="activities.html" class="active">活動報告</a></li>
+                    <li><a href="donation.html">募金・支援</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="container">
+                <h1>活動報告</h1>
+                <p>青空少年野球クラブの最新の活動をお伝えします</p>
+            </div>
+        </section>
+
+        <!-- 活動カテゴリー -->
+        <section class="activity-categories">
+            <div class="container">
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">すべて</button>
+                    <button class="category-tab" data-category="games">試合結果</button>
+                    <button class="category-tab" data-category="practice">練習の様子</button>
+                    <button class="category-tab" data-category="events">イベント</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 活動報告一覧 -->
+        <section class="activities-list">
+            <div class="container">
+                <!-- 試合結果 -->
+                <article class="activity-item" data-category="games">
+                    <div class="activity-date">2025.06.15</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/game-result-1.jpg" alt="夏季大会準優勝">
+                        </div>
+                        <div class="activity-text">
+                            <h3>地区夏季大会で準優勝！</h3>
+                            <div class="activity-category">試合結果</div>
+                            <p>6月15日に行われた地区夏季大会で、青空少年野球クラブが準優勝という素晴らしい成績を収めました。決勝戦では惜しくも敗れましたが、選手たちは最後まで諦めずに戦い抜きました。</p>
+                            <div class="game-details">
+                                <h4>試合結果詳細</h4>
+                                <div class="game-score">
+                                    <div class="score-item">
+                                        <span class="team">準決勝</span>
+                                        <span class="score">青空 8 - 3 ○○クラブ</span>
+                                    </div>
+                                    <div class="score-item">
+                                        <span class="team">決勝戦</span>
+                                        <span class="score">青空 4 - 6 △△チーム</span>
+                                    </div>
+                                </div>
+                                <p><strong>MVP：</strong>高橋勇太（6年）- 2試合で3安打2打点の活躍</p>
+                                <p><strong>優秀選手：</strong>中村健太（6年）- 安定したリードで投手陣をサポート</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 練習の様子 -->
+                <article class="activity-item" data-category="practice">
+                    <div class="activity-date">2025.06.12</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/practice-report-1.jpg" alt="バッティング練習">
+                        </div>
+                        <div class="activity-text">
+                            <h3>新しいバッティング練習メニューを導入</h3>
+                            <div class="activity-category">練習の様子</div>
+                            <p>今週から新しいバッティング練習メニューを導入しました。ティーバッティングの基本から始まり、段階的にレベルアップしていく内容です。選手たちも意欲的に取り組んでいます。</p>
+                            <div class="practice-details">
+                                <h4>練習メニュー</h4>
+                                <ul>
+                                    <li>ティーバッティング（基本フォーム確認）</li>
+                                    <li>フリーバッティング（実戦形式）</li>
+                                    <li>バント練習（状況判断）</li>
+                                    <li>走塁練習（ベースランニング）</li>
+                                </ul>
+                                <p>特に低学年の選手たちの上達が目覚ましく、コーチ陣も手応えを感じています。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- イベント -->
+                <article class="activity-item" data-category="events">
+                    <div class="activity-date">2025.06.08</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/parent-game.jpg" alt="親子野球大会">
+                        </div>
+                        <div class="activity-text">
+                            <h3>第5回親子野球大会を開催</h3>
+                            <div class="activity-category">イベント</div>
+                            <p>毎年恒例の親子野球大会を開催しました。保護者の皆様にもグラウンドに立っていただき、子どもたちと一緒に汗を流しました。普段見ることのできない保護者の皆様のプレーに、子どもたちも大興奮でした。</p>
+                            <div class="event-details">
+                                <h4>イベント内容</h4>
+                                <ul>
+                                    <li>親子キャッチボール</li>
+                                    <li>親子対抗リレー</li>
+                                    <li>保護者 vs 選手の試合</li>
+                                    <li>BBQ懇親会</li>
+                                </ul>
+                                <p>参加者：選手45名、保護者38名、指導者8名</p>
+                                <p>天候にも恵まれ、素晴らしい一日となりました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 試合結果 -->
+                <article class="activity-item" data-category="games">
+                    <div class="activity-date">2025.06.01</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/practice-game.jpg" alt="練習試合">
+                        </div>
+                        <div class="activity-text">
+                            <h3>○○クラブとの練習試合</h3>
+                            <div class="activity-category">試合結果</div>
+                            <p>近隣の○○クラブとの練習試合を行いました。公式戦前の良い調整となり、選手たちも実戦感覚を取り戻すことができました。</p>
+                            <div class="game-details">
+                                <div class="game-score">
+                                    <div class="score-item">
+                                        <span class="team">Aチーム</span>
+                                        <span class="score">青空 7 - 5 ○○クラブ</span>
+                                    </div>
+                                    <div class="score-item">
+                                        <span class="team">Bチーム</span>
+                                        <span class="score">青空 3 - 8 ○○クラブ</span>
+                                    </div>
+                                </div>
+                                <p>Aチームは打線が好調で、Bチームは守備に課題が見つかりました。次回の練習で重点的に取り組みます。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 練習の様子 -->
+                <article class="activity-item" data-category="practice">
+                    <div class="activity-date">2025.05.25</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/fielding-practice.jpg" alt="守備練習">
+                        </div>
+                        <div class="activity-text">
+                            <h3>守備力向上のための特別練習</h3>
+                            <div class="activity-category">練習の様子</div>
+                            <p>守備力向上を目指して、特別練習を実施しました。基本的なキャッチボールから始まり、ノック練習、連携プレーまで幅広く取り組みました。</p>
+                            <div class="practice-details">
+                                <h4>練習内容</h4>
+                                <ul>
+                                    <li>基本キャッチボール（正確性重視）</li>
+                                    <li>ゴロ捕球練習（低い姿勢の維持）</li>
+                                    <li>フライ捕球練習（落下点の判断）</li>
+                                    <li>内野連携プレー（ダブルプレー等）</li>
+                                    <li>外野からの返球練習</li>
+                                </ul>
+                                <p>特に内野陣の連携が向上し、スムーズなプレーができるようになりました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- イベント -->
+                <article class="activity-item" data-category="events">
+                    <div class="activity-date">2025.05.20</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/cleanup-activity.jpg" alt="グラウンド清掃">
+                        </div>
+                        <div class="activity-text">
+                            <h3>グラウンド清掃ボランティア活動</h3>
+                            <div class="activity-category">イベント</div>
+                            <p>日頃お世話になっているグラウンドの清掃活動を行いました。選手、保護者、指導者が一丸となって、グラウンドをきれいにしました。</p>
+                            <div class="event-details">
+                                <h4>活動内容</h4>
+                                <ul>
+                                    <li>グラウンド整備（石拾い、土ならし）</li>
+                                    <li>ベンチ・フェンス清掃</li>
+                                    <li>用具庫の整理整頓</li>
+                                    <li>周辺のゴミ拾い</li>
+                                </ul>
+                                <p>参加者：選手40名、保護者25名、指導者8名</p>
+                                <p>地域の皆様からも感謝の言葉をいただきました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 試合結果 -->
+                <article class="activity-item" data-category="games">
+                    <div class="activity-date">2025.05.15</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/spring-tournament.jpg" alt="春季大会">
+                        </div>
+                        <div class="activity-text">
+                            <h3>春季大会 ベスト8進出</h3>
+                            <div class="activity-category">試合結果</div>
+                            <p>春季大会でベスト8に進出しました。1回戦、2回戦ともに接戦を制し、準々決勝では惜しくも敗退しましたが、チーム一丸となって戦いました。</p>
+                            <div class="game-details">
+                                <div class="game-score">
+                                    <div class="score-item">
+                                        <span class="team">1回戦</span>
+                                        <span class="score">青空 6 - 4 □□チーム</span>
+                                    </div>
+                                    <div class="score-item">
+                                        <span class="team">2回戦</span>
+                                        <span class="score">青空 5 - 3 ◇◇クラブ</span>
+                                    </div>
+                                    <div class="score-item">
+                                        <span class="team">準々決勝</span>
+                                        <span class="score">青空 2 - 7 ☆☆チーム</span>
+                                    </div>
+                                </div>
+                                <p>課題も見つかりましたが、夏の大会に向けて良い経験となりました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 練習の様子 -->
+                <article class="activity-item" data-category="practice">
+                    <div class="activity-date">2025.05.10</div>
+                    <div class="activity-content">
+                        <div class="activity-image">
+                            <img src="images/new-member-practice.jpg" alt="新入団員練習">
+                        </div>
+                        <div class="activity-text">
+                            <h3>新入団員向け基礎練習</h3>
+                            <div class="activity-category">練習の様子</div>
+                            <p>4月に入団した新メンバー向けの基礎練習を実施しました。野球の基本ルールから始まり、キャッチボール、バッティングの基礎を丁寧に指導しました。</p>
+                            <div class="practice-details">
+                                <h4>指導内容</h4>
+                                <ul>
+                                    <li>野球のルール説明</li>
+                                    <li>正しいキャッチボールの方法</li>
+                                    <li>バットの持ち方・振り方</li>
+                                    <li>ベースランニングの基本</li>
+                                    <li>チームでの挨拶・礼儀</li>
+                                </ul>
+                                <p>新入団員5名全員が積極的に参加し、上級生も優しくサポートしてくれました。</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- 年間成績 -->
+        <section class="annual-results">
+            <div class="container">
+                <h2>2025年度 年間成績</h2>
+                <div class="results-summary">
+                    <div class="result-card">
+                        <div class="result-number">15</div>
+                        <div class="result-label">試合数</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">9</div>
+                        <div class="result-label">勝利</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">6</div>
+                        <div class="result-label">敗戦</div>
+                    </div>
+                    <div class="result-card">
+                        <div class="result-number">0.600</div>
+                        <div class="result-label">勝率</div>
+                    </div>
+                </div>
+                
+                <div class="tournament-results">
+                    <h3>大会成績</h3>
+                    <div class="tournament-list">
+                        <div class="tournament-item">
+                            <span class="tournament-name">春季大会</span>
+                            <span class="tournament-result">ベスト8</span>
+                        </div>
+                        <div class="tournament-item">
+                            <span class="tournament-name">夏季大会</span>
+                            <span class="tournament-result">準優勝</span>
+                        </div>
+                        <div class="tournament-item">
+                            <span class="tournament-name">秋季大会</span>
+                            <span class="tournament-result">予定</span>
+                        </div>
+                        <div class="tournament-item">
+                            <span class="tournament-name">冬季大会</span>
+                            <span class="tournament-result">予定</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 今後の予定 -->
+        <section class="upcoming-schedule">
+            <div class="container">
+                <h2>今後の予定</h2>
+                <div class="schedule-list">
+                    <div class="schedule-item">
+                        <div class="schedule-date">
+                            <span class="month">6</span>
+                            <span class="day">22</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>練習試合 vs ○○クラブ</h3>
+                            <p>場所：青空小学校グラウンド<br>時間：9:00〜12:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-date">
+                            <span class="month">6</span>
+                            <span class="day">29</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>地域交流イベント参加</h3>
+                            <p>場所：○○公園<br>時間：10:00〜15:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-date">
+                            <span class="month">7</span>
+                            <span class="day">6</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>夏季合宿</h3>
+                            <p>場所：○○研修センター<br>期間：1泊2日</p>
+                        </div>
+                    </div>
+                    
+                    <div class="schedule-item">
+                        <div class="schedule-date">
+                            <span class="month">7</span>
+                            <span class="day">13</span>
+                        </div>
+                        <div class="schedule-content">
+                            <h3>秋季大会 開幕</h3>
+                            <p>場所：地区野球場<br>時間：未定</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>青空少年野球クラブ</h3>
+                    <p>地域の子どもたちと共に、野球を通じて成長していくクラブです。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-envelope"></i> info@aozora-baseball.com</p>
+                    <p><i class="fas fa-phone"></i> 090-1234-5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒123-4567 東京都○○区○○町1-2-3</p>
+                </div>
+                <div class="footer-section">
+                    <h3>クイックリンク</h3>
+                    <ul>
+                        <li><a href="about.html">クラブ概要</a></li>
+                        <li><a href="members.html">メンバー紹介</a></li>
+                        <li><a href="activities.html">活動報告</a></li>
+                        <li><a href="donation.html">募金・支援</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 青空少年野球クラブ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // カテゴリータブの切り替え
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryTabs = document.querySelectorAll('.category-tab');
+            const activityItems = document.querySelectorAll('.activity-item');
+            
+            categoryTabs.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    const category = this.dataset.category;
+                    
+                    // すべてのタブからactiveクラスを削除
+                    categoryTabs.forEach(t => t.classList.remove('active'));
+                    // クリックされたタブにactiveクラスを追加
+                    this.classList.add('active');
+                    
+                    // 活動項目の表示/非表示を切り替え
+                    activityItems.forEach(item => {
+                        if (category === 'all' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

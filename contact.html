@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ - 青空少年野球クラブ</title>
+    <meta name="description" content="青空少年野球クラブへのお問い合わせ、入会希望、体験練習のお申し込みはこちらから。">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-baseball-ball"></i>
+                    <span>青空少年野球クラブ</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">クラブ概要</a></li>
+                    <li><a href="members.html">メンバー紹介</a></li>
+                    <li><a href="activities.html">活動報告</a></li>
+                    <li><a href="donation.html">募金・支援</a></li>
+                    <li><a href="contact.html" class="active">お問い合わせ</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <!-- ページヘッダー -->
+        <section class="page-header">
+            <div class="container">
+                <h1>お問い合わせ</h1>
+                <p>入会希望・体験練習・その他のお問い合わせはこちらから</p>
+            </div>
+        </section>
+
+        <!-- お問い合わせフォーム -->
+        <section class="contact-form">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>お気軽にお問い合わせください</h2>
+                        <p>青空少年野球クラブでは、野球に興味のある子どもたちを随時募集しています。体験練習も行っていますので、まずはお気軽にお問い合わせください。</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h3>お電話でのお問い合わせ</h3>
+                                    <p>090-1234-5678</p>
+                                    <p>受付時間：平日 18:00〜21:00<br>土日 9:00〜18:00</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h3>メールでのお問い合わせ</h3>
+                                    <p>info@aozora-baseball.com</p>
+                                    <p>24時間受付<br>2営業日以内にご返信いたします</p>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h3>練習見学</h3>
+                                    <p>青空小学校グラウンド</p>
+                                    <p>毎週土日 9:00〜12:00<br>事前連絡不要でお越しください</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-container">
+                        <form id="contactForm" class="contact-form-inner">
+                            <div class="form-section">
+                                <h3>お問い合わせ種別</h3>
+                                <div class="inquiry-type">
+                                    <label class="type-option">
+                                        <input type="radio" name="inquiry-type" value="trial" required>
+                                        <span>体験練習希望</span>
+                                    </label>
+                                    <label class="type-option">
+                                        <input type="radio" name="inquiry-type" value="join" required>
+                                        <span>入会希望</span>
+                                    </label>
+                                    <label class="type-option">
+                                        <input type="radio" name="inquiry-type" value="general" required>
+                                        <span>一般的なお問い合わせ</span>
+                                    </label>
+                                    <label class="type-option">
+                                        <input type="radio" name="inquiry-type" value="donation" required>
+                                        <span>寄付・支援について</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>お子様の情報</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="child-name">お子様のお名前 <span class="required">*</span></label>
+                                        <input type="text" id="child-name" name="child-name" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="child-age">年齢 <span class="required">*</span></label>
+                                        <select id="child-age" name="child-age" required>
+                                            <option value="">選択してください</option>
+                                            <option value="6">6歳（小学1年生）</option>
+                                            <option value="7">7歳（小学2年生）</option>
+                                            <option value="8">8歳（小学3年生）</option>
+                                            <option value="9">9歳（小学4年生）</option>
+                                            <option value="10">10歳（小学5年生）</option>
+                                            <option value="11">11歳（小学6年生）</option>
+                                            <option value="12">12歳（中学1年生）</option>
+                                        </select>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="child-school">学校名</label>
+                                        <input type="text" id="child-school" name="child-school" placeholder="○○小学校">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="baseball-experience">野球経験</label>
+                                        <select id="baseball-experience" name="baseball-experience">
+                                            <option value="">選択してください</option>
+                                            <option value="none">未経験</option>
+                                            <option value="beginner">少し経験あり（1年未満）</option>
+                                            <option value="intermediate">経験あり（1〜3年）</option>
+                                            <option value="advanced">経験豊富（3年以上）</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>保護者様の情報</h3>
+                                <div class="form-grid">
+                                    <div class="form-group">
+                                        <label for="parent-name">保護者様のお名前 <span class="required">*</span></label>
+                                        <input type="text" id="parent-name" name="parent-name" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="parent-email">メールアドレス <span class="required">*</span></label>
+                                        <input type="email" id="parent-email" name="parent-email" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="parent-phone">電話番号 <span class="required">*</span></label>
+                                        <input type="tel" id="parent-phone" name="parent-phone" required>
+                                        <div class="error-message"></div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="parent-address">ご住所</label>
+                                        <input type="text" id="parent-address" name="parent-address" placeholder="〒123-4567 東京都○○区○○町1-2-3">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>体験練習について</h3>
+                                <div class="trial-info" id="trial-section" style="display: none;">
+                                    <div class="form-grid">
+                                        <div class="form-group">
+                                            <label for="trial-date">希望日</label>
+                                            <input type="date" id="trial-date" name="trial-date">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="trial-time">希望時間</label>
+                                            <select id="trial-time" name="trial-time">
+                                                <option value="">選択してください</option>
+                                                <option value="morning">午前（9:00〜12:00）</option>
+                                                <option value="afternoon">午後（13:00〜16:00）</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="trial-equipment">野球用具の有無</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="equipment" value="glove">
+                                                <span>グローブ</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="equipment" value="bat">
+                                                <span>バット</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="equipment" value="shoes">
+                                                <span>スパイク</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="equipment" value="none">
+                                                <span>持っていない</span>
+                                            </label>
+                                        </div>
+                                        <p class="form-note">※用具をお持ちでない場合は貸し出しいたします</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>お問い合わせ内容</h3>
+                                <div class="form-group">
+                                    <label for="message">メッセージ <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="6" placeholder="お問い合わせ内容をご記入ください" required></textarea>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3>その他</h3>
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="newsletter" value="yes">
+                                        <span>クラブの最新情報をメールで受け取る</span>
+                                    </label>
+                                </div>
+                                <div class="form-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" name="privacy" value="agree" required>
+                                        <span>個人情報の取り扱いについて同意する <span class="required">*</span></span>
+                                    </label>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">送信する</button>
+                                <button type="reset" class="btn btn-secondary">リセット</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- よくある質問 -->
+        <section class="faq">
+            <div class="container">
+                <h2>よくある質問</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>野球未経験でも大丈夫ですか？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、大丈夫です。多くの子どもたちが未経験から始めています。基礎から丁寧に指導いたしますので、安心してご参加ください。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>体験練習は何回まで参加できますか？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>体験練習は3回まで無料で参加していただけます。お子様がクラブの雰囲気に慣れるまで、じっくりとご検討ください。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>野球用具は必要ですか？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>体験練習時は貸し出しいたします。入会後は徐々に揃えていただければ大丈夫です。購入時のアドバイスもいたします。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>保護者の当番はありますか？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>月1回程度、練習のお手伝いをお願いしています。お茶当番や試合時の応援など、無理のない範囲でご協力いただいています。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>女の子でも参加できますか？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>もちろんです。現在も数名の女の子が活躍しています。男女関係なく、野球を楽しんでいただけます。</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>練習を休んだ場合の連絡は必要ですか？</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、安全管理のため事前にご連絡をお願いします。メールまたは電話でお知らせください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセス情報 -->
+        <section class="access-info">
+            <div class="container">
+                <h2>アクセス情報</h2>
+                <div class="access-content">
+                    <div class="access-details">
+                        <h3>青空小学校グラウンド</h3>
+                        <div class="access-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>〒123-4567 東京都○○区○○町1-2-3</p>
+                        </div>
+                        <div class="access-item">
+                            <i class="fas fa-train"></i>
+                            <p>JR○○線「○○駅」徒歩10分</p>
+                        </div>
+                        <div class="access-item">
+                            <i class="fas fa-bus"></i>
+                            <p>バス「○○小学校前」下車すぐ</p>
+                        </div>
+                        <div class="access-item">
+                            <i class="fas fa-car"></i>
+                            <p>駐車場20台完備（無料）</p>
+                        </div>
+                        <div class="access-note">
+                            <h4>お車でお越しの方へ</h4>
+                            <ul>
+                                <li>グラウンド横の駐車場をご利用ください</li>
+                                <li>満車の場合は近隣のコインパーキングをご利用ください</li>
+                                <li>路上駐車は近隣の迷惑となりますのでお控えください</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <div class="map-placeholder">
+                            <img src="images/access-map.jpg" alt="アクセスマップ">
+                            <p>※実際の地図はGoogle Mapsを埋め込み</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>青空少年野球クラブ</h3>
+                    <p>地域の子どもたちと共に、野球を通じて成長していくクラブです。</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>お問い合わせ</h3>
+                    <p><i class="fas fa-envelope"></i> info@aozora-baseball.com</p>
+                    <p><i class="fas fa-phone"></i> 090-1234-5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 〒123-4567 東京都○○区○○町1-2-3</p>
+                </div>
+                <div class="footer-section">
+                    <h3>クイックリンク</h3>
+                    <ul>
+                        <li><a href="about.html">クラブ概要</a></li>
+                        <li><a href="members.html">メンバー紹介</a></li>
+                        <li><a href="activities.html">活動報告</a></li>
+                        <li><a href="donation.html">募金・支援</a></li>
+                        <li><a href="contact.html">お問い合わせ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 青空少年野球クラブ. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // お問い合わせ種別に応じた表示制御
+        document.addEventListener('DOMContentLoaded', function() {
+            const inquiryTypes = document.querySelectorAll('input[name="inquiry-type"]');
+            const trialSection = document.getElementById('trial-section');
+            
+            inquiryTypes.forEach(type => {
+                type.addEventListener('change', function() {
+                    if (this.value === 'trial' || this.value === 'join') {
+                        trialSection.style.display = 'block';
+                    } else {
+                        trialSection.style.display = 'none';
+                    }
+                });
+            });
+            
+            // FAQのアコーディオン
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                
+                question.addEventListener('click', function() {
+                    const isOpen = item.classList.contains('open');
+                    
+                    // 他のFAQを閉じる
+                    faqItems.forEach(otherItem => {
+                        otherItem.classList.remove('open');
+                    });
+                    
+                    // クリックされたFAQを開く/閉じる
+                    if (!isOpen) {
+                        item.classList.add('open');
+                    }
+                });
+            });
+            
+            // フォーム送信処理
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm(this)) {
+                    // 実際の送信処理はここに実装
+                    alert('お問い合わせを受け付けました。2営業日以内にご返信いたします。');
+                    this.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
